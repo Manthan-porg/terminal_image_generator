@@ -1,0 +1,22 @@
+:root{--bg:#012456;--bar:#2b2b2b;--fg:#cccccc;--green:#16c60c;--blue:#3b78ff;--cursor:#ffd9a0}
+*{box-sizing:border-box}
+body{margin:0;padding:24px 0;background:#fff;display:flex;flex-direction:column;align-items:center;gap:28px;font-family:"Ubuntu Mono","DejaVu Sans Mono",Consolas,monospace}
+.win{width:min(920px,96vw);background:var(--bg);color:var(--fg);box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.tabs{display:flex;align-items:center;background:var(--bar);height:22px;font:11px "Segoe UI",sans-serif;color:#fff}
+.tab{display:flex;align-items:center;gap:6px;background:#0c0c0c;padding:0 10px;height:100%;min-width:150px}
+.ico{width:12px;height:12px;flex:none}
+.tab b{margin-left:auto;font-weight:400}
+.plus{padding:0 10px}
+.ctl{margin-left:auto;display:flex;gap:26px;padding-right:12px}
+.term{padding:4px 6px 10px;font-size:11.5px;line-height:1.28;min-height:120px}
+.big .term{font-size:17px;padding:6px 8px 40px;min-height:200px}
+.sm .term{font-size:9.5px;line-height:1.22}
+.ln{white-space:pre-wrap;word-break:break-all;min-height:1.2em}
+.u{color:var(--green)}
+.d{color:var(--blue);color:#8ab4ff}
+.cur{display:inline-block;width:.6em;height:1.1em;background:var(--cursor);vertical-align:text-bottom;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:.25}}
+.tb{display:flex;align-items:center;gap:14px;height:22px;background:#1b2a3d;color:#fff;font:9px "Segoe UI",sans-serif;padding:0 10px}
+.tb span{background:#ffffff18;padding:2px 8px;border-radius:3px;white-space:nowrap}
+.tb .win11{width:13px;height:13px;flex:none}
+.tb .clock{margin-left:auto;background:none;text-align:right;line-height:1.1}
